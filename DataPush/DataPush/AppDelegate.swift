@@ -48,15 +48,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // TODO: Handle data of notification
         
+        
+        
+        let viewController:ViewController = window!.rootViewController as! ViewController
+        
+        
+        
         print("@%", userInfo)
         
+        
+        
+        if let aps = userInfo["notification"] as? [String: AnyObject] {
+            
+            if let alert = aps["body"] as? String {
+                
+                print("alert @%", alert)
+                
+                viewController.updateLabels((userInfo["from"] as? String)!, alert: alert)
+                
+                
+                NSUserDefaults.standardUserDefaults().setObject(alert, forKey: "last_push")
+                
+                NSUserDefaults.standardUserDefaults().setObject(userInfo["from"],forKey: "last_push_id")
+                
+            }
+            
+        }
     }
     // [END receive_message]
     
     // [START refresh_token]
     func tokenRefreshNotification(notification: NSNotification) {
+        
         let refreshedToken = FIRInstanceID.instanceID().token()!
+    
         print("InstanceID token: \(refreshedToken)")
+
         
         // Connect to FCM since connection may have failed when attempted before having a token.
         connectToFcm()
@@ -70,8 +97,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Unable to connect with FCM. \(error)")
             } else {
                 print("Connected to FCM. Application is no longer at background.")
-                let refreshedToken = FIRInstanceID.instanceID().token()!
-                print("InstanceID token: \(refreshedToken)")
+                //let refreshedToken = FIRInstanceID.instanceID().token()!
+                //print("InstanceID token: \(refreshedToken)")
             }
         }
     }

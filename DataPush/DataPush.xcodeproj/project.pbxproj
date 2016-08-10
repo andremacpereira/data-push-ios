@@ -14,6 +14,7 @@
 		B6212CB51D5AD42C005ED56E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6212CB31D5AD42C005ED56E /* LaunchScreen.storyboard */; };
 		B6212CC01D5AD42D005ED56E /* DataPushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6212CBF1D5AD42D005ED56E /* DataPushTests.swift */; };
 		B6212CCB1D5AD42D005ED56E /* DataPushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6212CCA1D5AD42D005ED56E /* DataPushUITests.swift */; };
+		B6F7818D1D5AD70B0095A861 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6F7818C1D5AD70B0095A861 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B6212CC61D5AD42D005ED56E /* DataPushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataPushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6212CCA1D5AD42D005ED56E /* DataPushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPushUITests.swift; sourceTree = "<group>"; };
 		B6212CCC1D5AD42D005ED56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6F7818C1D5AD70B0095A861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEB943BB1A1EE69C9845130C /* Pods-DataPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPush.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataPush/Pods-DataPush.release.xcconfig"; sourceTree = "<group>"; };
 		DA265FF5D696A2B04C39B169 /* Pods-DataPushUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPushUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataPushUITests/Pods-DataPushUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F281AC1DFC4E91163BA2E796 /* Pods-DataPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataPush.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataPush/Pods-DataPush.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				B6212CAE1D5AD42C005ED56E /* Main.storyboard */,
 				B6212CB11D5AD42C005ED56E /* Assets.xcassets */,
 				B6212CB31D5AD42C005ED56E /* LaunchScreen.storyboard */,
+				B6F7818C1D5AD70B0095A861 /* GoogleService-Info.plist */,
 				B6212CB61D5AD42C005ED56E /* Info.plist */,
 			);
 			path = DataPush;
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6212CB51D5AD42C005ED56E /* LaunchScreen.storyboard in Resources */,
+				B6F7818D1D5AD70B0095A861 /* GoogleService-Info.plist in Resources */,
 				B6212CB21D5AD42C005ED56E /* Assets.xcassets in Resources */,
 				B6212CB01D5AD42C005ED56E /* Main.storyboard in Resources */,
 			);

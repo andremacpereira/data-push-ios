@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  DataPush
 //
-//  Created by LeonardoKva on 10/08/16.
-//
 //
 
 import UIKit

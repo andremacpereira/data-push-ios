@@ -1,0 +1,6 @@
+framework module Pods_DataPush {
+  umbrella header "Pods-DataPush-umbrella.h"
+
+  export *
+  module * { export * }
+}

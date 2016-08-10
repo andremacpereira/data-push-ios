@@ -2,9 +2,6 @@
 //  DataPushTests.swift
 //  DataPushTests
 //
-//  Created by LeonardoKva on 10/08/16.
-//
-//
 
 import XCTest
 @testable import DataPush
